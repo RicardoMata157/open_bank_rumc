@@ -1,5 +1,6 @@
 package com.mx.openbank.i2.util;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,27 +9,51 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class UtilConnector {
+	
+	
+	public List<HashMap<String, String>> extraeCadenaBusquedaJson(String cadena) {
+	    ObjectMapper objectMapper = new ObjectMapper();
+	    List<HashMap<String, String>> listaValores = new ArrayList<>();
 
-	public String extraeCadenaBusquedaJson(String cadena) {
-		ObjectMapper objectMapper = new ObjectMapper();
-		String value = "";
-		try {
-			JsonNode rootNode = objectMapper.readTree(cadena);
-			// Navegar por las propiedades
-			JsonNode conditionsNode = rootNode.path("payload").path("conditions");
+	    try {
+	        JsonNode rootNode = objectMapper.readTree(cadena);
+	        JsonNode conditionsNode = rootNode.path("payload").path("conditions");
 
-			for (JsonNode condition : conditionsNode) {
-				String id = condition.path("id").asText();
-				String logicalType = condition.path("logicalType").asText();
-				value = condition.path("value").asText();
+	        for (JsonNode condition : conditionsNode) {
+	            HashMap<String, String> map = new HashMap<>();
+	            map.put("id", condition.path("id").asText());
+	            map.put("logicalType", condition.path("logicalType").asText());
+	            map.put("value", condition.path("value").asText());
+	            listaValores.add(map);
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
 
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return value;
+	    return listaValores;
 	}
+
+
+//	public String extraeCadenaBusquedaJson(String cadena) {
+//		ObjectMapper objectMapper = new ObjectMapper();
+//		String value = "";
+//		try {
+//			JsonNode rootNode = objectMapper.readTree(cadena);
+//			// Navegar por las propiedades
+//			JsonNode conditionsNode = rootNode.path("payload").path("conditions");
+//
+//			for (JsonNode condition : conditionsNode) {
+//				String id = condition.path("id").asText();
+//				String logicalType = condition.path("logicalType").asText();
+//				value = condition.path("value").asText();
+//
+//			}
+//
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		return value;
+//	}
 
 	public Map<String, Object> generateResponse(List<Map<String, Object>> entities) {
 		// Crear el mapa principal que contendrá la clave "entities"

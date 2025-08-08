@@ -2,6 +2,8 @@ package com.mx.openbank.i2.controller;
 
 import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
@@ -27,7 +29,7 @@ public class Controller {
 	
 	private UtilConnector util;
 	
-	private static final Logger logger = LogManager.getLogger(Controller.class);
+	private static final Logger Logger = LogManager.getLogger(Controller.class);
 	
 	@Autowired
 	private ServicePersona servicePersona;
@@ -40,10 +42,12 @@ public class Controller {
 	
 	@RequestMapping(method = RequestMethod.POST, value = "/busqueda-persona", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
 	public ResponseEntity<Map<String, Object>> busquedaPersona(@RequestBody String query) {
-		String valor = util.extraeCadenaBusquedaJson(query);
-		logger.info("LLego la consulta esperada" + valor);
+		util = new UtilConnector();
+		Logger.info("LLego la consulta esperada" + query);
+		List<HashMap<String, String>> valor = util.extraeCadenaBusquedaJson(query);
+		Logger.info("LLego la consulta esperada" + valor);
 		Map<String, Object> mapaEntidades = servicePersona.consultaParametro(valor);
-		logger.info("Respuesta....." + mapaEntidades);
+		Logger.info("Respuesta....." + mapaEntidades);
 		
 		return new ResponseEntity<Map<String, Object>>(mapaEntidades, HttpStatus.OK);
 	}

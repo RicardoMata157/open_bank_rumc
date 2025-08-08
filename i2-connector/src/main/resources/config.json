@@ -100,15 +100,21 @@
 					{
 						"conditions": [
 							{
-								"id": "searchPersona1",
+								"id": "nombres",
 								"label": "Nombres",
 								"mandatory": true,
 								"logicalType": "SINGLE_LINE_STRING"
 							},
 							{
-								"id": "searchPersona1",
+								"id": "apellidos",
 								"label": "Apellidos",
-								"mandatory": true,
+								"mandatory": false,
+								"logicalType": "SINGLE_LINE_STRING"
+							},
+							{
+								"id": "idCliente",
+								"label": "id_cliente",
+								"mandatory": false,
 								"logicalType": "SINGLE_LINE_STRING"
 							}
 						]
