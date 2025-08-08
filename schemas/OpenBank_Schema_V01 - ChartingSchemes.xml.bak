@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ChartingSchemeList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.i2group.com/Schemas/2012-05-29/ModelData/v2">
+  <ChartingSchemes xmlns="">
+    <ChartingScheme Name="Esquema de gráficos 1">
+      <XmlChartingScheme>
+        <ChartItemAttributes>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Tipo de comercio</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>RFC</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Clabe interbancaria</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Tipo de cuenta</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Número de cuenta</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Número de cuenta/Entrada</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Número de cuenta/Salida</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Nombre Completo</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Banco</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Latitud</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Fecha y hora</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Clave de rastreo</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Códigos de operación/Entrada</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Códigos de operación/Salida</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Monto</Name>
+            <Type>AttNumber</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Narrative</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Ordering Customer Id</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Beneficiary Customer Id</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Nombre</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Apellido paterno</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Apellido materno</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Id cliente</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Tipo de persona</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Indicador de empleado</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>CURP</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>INE</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Categoría de persona</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>País de nacimiento</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Fecha de nacimiento</Name>
+            <Type>AttTime</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=" ">
+            <Name>Riesgo de cliente</Name>
+            <Type>AttText</Type>
+            <IconFile>General</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Calle</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Ciudad</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>C.P.</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>País</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Estado</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute Suffix="" Prefix="">
+            <Name>Número telefónico</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Número de tarjeta</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+          <ChartItemAttribute ShowPrefix="true" ShowClassName="true" Suffix="" Prefix=": ">
+            <Name>Tipo de tarjeta</Name>
+            <Type>AttText</Type>
+            <IconFile>i2 Social Media Setting</IconFile>
+          </ChartItemAttribute>
+        </ChartItemAttributes>
+        <ChartItemDataRecordProperties />
+        <EntityMappings>
+          <ItemType Id="TENT3">
+            <PropertyMappings>
+              <PropertyMapping Property="Label">
+                <ResolvableValue>
+                  <ApolloLabel SchemeId="LS1" />
+                </ResolvableValue>
+              </PropertyMapping>
+            </PropertyMappings>
+            <AttributeMappings>
+              <AttributeMapping Name="Tipo de comercio">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP46">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="RFC">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP47">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+            </AttributeMappings>
+          </ItemType>
+          <ItemType Id="TENT10">
+            <PropertyMappings>
+              <PropertyMapping Property="Label">
+                <ResolvableValue>
+                  <ApolloLabel SchemeId="LS1" />
+                </ResolvableValue>
+              </PropertyMapping>
+            </PropertyMappings>
+            <AttributeMappings>
+              <AttributeMapping Name="Clabe interbancaria">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP11">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Tipo de cuenta">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP10">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Número de cuenta">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP9">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+            </AttributeMappings>
+          </ItemType>
+          <ItemType Id="TENT1">
+            <PropertyMappings>
+              <PropertyMapping Property="Label">
+                <ResolvableValue>
+                  <ApolloLabel SchemeId="LS1" />
+                </ResolvableValue>
+              </PropertyMapping>
+            </PropertyMappings>
+            <AttributeMappings>
+              <AttributeMapping Name="Nombre">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP1">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Apellido paterno">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP2">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Apellido materno" />
+              <AttributeMapping Name="Id cliente">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP5">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Tipo de persona">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP6">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Indicador de empleado">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP51">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="CURP">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP49">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="INE">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP50">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="RFC">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP48">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Categoría de persona">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP7">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="País de nacimiento">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP8">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Fecha de nacimiento">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP52">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Riesgo de cliente">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP53">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+            </AttributeMappings>
+          </ItemType>
+          <ItemType Id="TENT2">
+            <PropertyMappings>
+              <PropertyMapping Property="Label">
+                <ResolvableValue>
+                  <ApolloLabel SchemeId="LS1" />
+                </ResolvableValue>
+              </PropertyMapping>
+            </PropertyMappings>
+            <AttributeMappings>
+              <AttributeMapping Name="Calle">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP16">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Ciudad">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP18">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="C.P.">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP21">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="País">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP22">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Estado">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP23">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+            </AttributeMappings>
+          </ItemType>
+          <ItemType Id="TENT5">
+            <PropertyMappings>
+              <PropertyMapping Property="Label">
+                <ResolvableValue>
+                  <ApolloLabel SchemeId="LS1" />
+                </ResolvableValue>
+              </PropertyMapping>
+            </PropertyMappings>
+            <AttributeMappings>
+              <AttributeMapping Name="Latitud">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP29">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Fecha y hora">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP26">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+            </AttributeMappings>
+          </ItemType>
+          <ItemType Id="TENT6">
+            <PropertyMappings>
+              <PropertyMapping Property="Label">
+                <ResolvableValue>
+                  <ApolloLabel SchemeId="LS1" />
+                </ResolvableValue>
+              </PropertyMapping>
+            </PropertyMappings>
+            <AttributeMappings>
+              <AttributeMapping Name="Número de cuenta/Entrada">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP31">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Número de cuenta/Salida">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP17">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Nombre Completo">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP32">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Banco">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP35">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+            </AttributeMappings>
+          </ItemType>
+          <ItemType Id="TENT8">
+            <PropertyMappings>
+              <PropertyMapping Property="Label">
+                <ResolvableValue>
+                  <ApolloLabel SchemeId="LS1" />
+                </ResolvableValue>
+              </PropertyMapping>
+            </PropertyMappings>
+            <AttributeMappings>
+              <AttributeMapping Name="Clave de rastreo">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP40">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Códigos de operación/Entrada">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP41">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Códigos de operación/Salida">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP27">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Monto">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP42">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Narrative">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP44">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Ordering Customer Id">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP30">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Beneficiary Customer Id">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP33">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+            </AttributeMappings>
+          </ItemType>
+          <ItemType Id="TENT11">
+            <PropertyMappings>
+              <PropertyMapping Property="Label">
+                <ResolvableValue>
+                  <ApolloLabel SchemeId="LS1" />
+                </ResolvableValue>
+              </PropertyMapping>
+            </PropertyMappings>
+            <AttributeMappings>
+              <AttributeMapping Name="Número de tarjeta">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP12">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+              <AttributeMapping Name="Tipo de tarjeta">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP13">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+            </AttributeMappings>
+          </ItemType>
+          <ItemType Id="TENT12">
+            <PropertyMappings>
+              <PropertyMapping Property="Label">
+                <ResolvableValue>
+                  <ApolloLabel SchemeId="LS1" />
+                </ResolvableValue>
+              </PropertyMapping>
+            </PropertyMappings>
+            <AttributeMappings>
+              <AttributeMapping Name="Número telefónico">
+                <ResolvableValue>
+                  <ApolloProperty Id="TP14">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </AttributeMapping>
+            </AttributeMappings>
+          </ItemType>
+        </EntityMappings>
+        <LinkMappings>
+          <ItemType Id="TENL1">
+            <PropertyMappings>
+              <PropertyMapping Property="Label">
+                <ResolvableValue>
+                  <ApolloLabel SchemeId="LS1" />
+                </ResolvableValue>
+              </PropertyMapping>
+            </PropertyMappings>
+            <AttributeMappings />
+          </ItemType>
+        </LinkMappings>
+      </XmlChartingScheme>
+    </ChartingScheme>
+    <ChartingScheme Name="Esquema de gráficos 2">
+      <XmlChartingScheme>
+        <ChartItemAttributes />
+        <ChartItemDataRecordProperties />
+        <EntityMappings />
+        <LinkMappings />
+      </XmlChartingScheme>
+    </ChartingScheme>
+    <ChartingScheme Name="Esquema de gráficos 3">
+      <XmlChartingScheme>
+        <ChartItemAttributes />
+        <ChartItemDataRecordProperties />
+        <EntityMappings />
+        <LinkMappings />
+      </XmlChartingScheme>
+    </ChartingScheme>
+    <ChartingScheme Name="Esquema de gráficos 4">
+      <XmlChartingScheme>
+        <ChartItemAttributes />
+        <ChartItemDataRecordProperties />
+        <EntityMappings />
+        <LinkMappings />
+      </XmlChartingScheme>
+    </ChartingScheme>
+  </ChartingSchemes>
+</ChartingSchemeList>
