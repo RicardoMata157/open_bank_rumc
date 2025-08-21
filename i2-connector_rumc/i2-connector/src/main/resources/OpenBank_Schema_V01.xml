@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns2:Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.i2group.com/Schemas/2011-03-03/ModelSchemaExtension" DefaultLabelingSchemeId="LS1" xmlns:ns2="http://www.i2group.com/Schemas/2011-03-03/ModelSchema">
+  <GradeTypes>
+    <GradeType Id="G1" Name="Fiabilidad" Description="Evaluación de origen" Mandatory="false">
+      <Values>
+        <Value>A</Value>
+        <Value>B</Value>
+        <Value>C</Value>
+        <Value>D</Value>
+        <Value>E</Value>
+      </Values>
+    </GradeType>
+    <GradeType Id="G2" Name="Confianza" Description="Evaluación de inteligencia de la información" Mandatory="false">
+      <Values>
+        <Value>1</Value>
+        <Value>2</Value>
+        <Value>3</Value>
+        <Value>4</Value>
+        <Value>5</Value>
+      </Values>
+    </GradeType>
+    <GradeType Id="G3" Name="Privacidad" Description="Código de manejo" Mandatory="false">
+      <Values>
+        <Value>1</Value>
+        <Value>2</Value>
+        <Value>3</Value>
+        <Value>4</Value>
+        <Value>5</Value>
+      </Values>
+    </GradeType>
+  </GradeTypes>
+  <ItemTypes>
+    <EntityTypes>
+      <EntityType Description="Un gráfico de Analyst's Notebook" DisplayName="Gráfico de Analyst's Notebook" Id="CHART" Icon="Anbchart">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="El nombre del gráfico, que es independiente del nombre de archivo" DisplayName="Nombre" Id="CHART1" LogicalType="SINGLE_LINE_STRING" Mandatory="true" Position="0" SemanticTypeId="" MaximumLengthChars="255">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="Una descripción del gráfico" DisplayName="Descripción" Id="CHART2" LogicalType="MULTIPLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+      <EntityType DisplayName="Persona" Id="TENT1" Icon="Person">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="" DisplayName="Nombre" Id="TP1" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="0" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Apellido paterno" Id="TP2" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Id cliente" Id="TP5" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="2" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Tipo de persona" Id="TP6" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="3" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Indicador de empleado" Id="TP51" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="4" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="CURP" Id="TP49" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="5" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="INE" Id="TP50" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="6" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="RFC" Id="TP48" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="7" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Categoría de persona" Id="TP7" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="8" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="País de nacimiento" Id="TP8" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="9" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Fecha de nacimiento" Id="TP52" LogicalType="DATE" Mandatory="false" Position="10" SemanticTypeId="">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Riesgo de cliente" Id="TP53" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="11" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+      <EntityType DisplayName="Domicilio" Id="TENT2" Icon="House">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="" DisplayName="Calle" Id="TP16" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="0" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Ciudad" Id="TP18" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="C.P." Id="TP21" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="2" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="País" Id="TP22" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="3" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Estado" Id="TP23" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="4" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Id domicilio" Id="TP24" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="5" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+      <EntityType DisplayName="Comercio" Id="TENT3" Icon="Corner_shop_market">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="" DisplayName="Nombre de comercio / Entrada" Id="TP45" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="0" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Tipo de comercio" Id="TP46" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="RFC" Id="TP47" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="2" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+      <EntityType DisplayName="Onboarding" Id="TENT5" Icon="Online_advert">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="" DisplayName="Fecha y hora" Id="TP26" LogicalType="DATE_AND_TIME" Mandatory="false" Position="0" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Id onboarding" Id="TP28" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Latitud" Id="TP29" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="2" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+      <EntityType DisplayName="Cuenta externa" Id="TENT6" Icon="Billing Account">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="" DisplayName="Número de cuenta/Entrada" Id="TP31" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="0" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Número de cuenta/Salida" Id="TP17" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Nombre Completo" Id="TP32" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="2" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Banco" Id="TP35" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="3" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Cuenta clabe" Id="TP19" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="4" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Id cuenta externa" Id="TP36" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="5" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+      <EntityType DisplayName="Operación" Id="TENT8" Icon="Subscrib">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="" DisplayName="Fecha y hora" Id="TP39" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="0" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="ID de la transacción " Id="TP20" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Clave de rastreo" Id="TP40" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="2" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Códigos de operación/Entrada" Id="TP41" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="3" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Códigos de operación/Salida" Id="TP27" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="4" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Monto" Id="TP42" LogicalType="DOUBLE" Mandatory="false" Position="5" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Dispositivo" Id="TP43" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="6" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Narrative" Id="TP44" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="7" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Ordering Customer Id" Id="TP30" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="8" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Beneficiary Customer Id" Id="TP33" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="9" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Latitud / Longitud" Id="TP34" LogicalType="GEOSPATIAL" Mandatory="false" Position="10" SemanticTypeId="">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+      <EntityType DisplayName="Cuenta" Id="TENT10" Icon="Account">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="" DisplayName="Número de cuenta" Id="TP9" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="0" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Tipo de cuenta" Id="TP10" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Clabe interbancaria" Id="TP11" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="2" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Número de cuanta interno " Id="TP54" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="3" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+      <EntityType DisplayName="Tarjeta" Id="TENT11" Icon="Credit Card">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="" DisplayName="Número de tarjeta" Id="TP12" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="0" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Tipo de tarjeta" Id="TP13" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+      <EntityType DisplayName="Télefono" Id="TENT12" Icon="Phone">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="" DisplayName="Número telefónico" Id="TP14" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="0" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Id teléfono" Id="TP15" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+    </EntityTypes>
+    <LinkTypes>
+      <LinkType DisplayName="Asociado" Id="TENL1" FromTypeIds="TENT1 TENT10 TENT11 TENT5 TENT6 TENT8" ToTypeIds="TENT10 TENT2 TENT5 TENT8 TENT1 TENT11 TENT3 TENT6">
+        <PropertyGroupTypes />
+        <PropertyTypes />
+      </LinkType>
+    </LinkTypes>
+  </ItemTypes>
+  <Id>bd35538d-4817-421c-930f-a41ddf7b40af</Id>
+  <Version>26</Version>
+  <SourceInfoMandatoryFields IsDateMandatory="false" IsDescriptionMandatory="false" IsReferenceMandatory="false" IsTypeMandatory="false" />
+  <LinkStrengthInfo DefaultLinkStrengthId="f232caa8-cf55-4d9a-8c21-19a55b0447da">
+    <LinkStrengths>
+      <LinkStrength Id="f232caa8-cf55-4d9a-8c21-19a55b0447da" Name="Confirmado" LineStyle="SOLID" />
+      <LinkStrength Id="59f66ee2-0abe-4036-a11d-07ed4175720e" Name="No confirmado" LineStyle="DASHED" />
+      <LinkStrength Id="f0d2ff1c-28cb-4afe-8cbb-89e198c910a3" Name="Provisional" LineStyle="DOTTED" />
+    </LinkStrengths>
+  </LinkStrengthInfo>
+  <LabelingSchemes>
+    <LabelingScheme Id="LS1" Name="Esquema de etiquetado 1">
+      <LabelDefinitions>
+        <LabelDefinition ItemTypeId="CHART">
+          <LabelParts />
+        </LabelDefinition>
+        <LabelDefinition ItemTypeId="TENT1">
+          <LabelParts>
+            <LabelPart Value="TP1" LabelPartType="PROPERTY_TYPE" />
+            <LabelPart Value="TP2" LabelPartType="PROPERTY_TYPE" />
+          </LabelParts>
+        </LabelDefinition>
+        <LabelDefinition ItemTypeId="TENT2">
+          <LabelParts>
+            <LabelPart Value="TP16" LabelPartType="PROPERTY_TYPE" />
+            <LabelPart Value="TP18" LabelPartType="PROPERTY_TYPE" />
+            <LabelPart Value="TP21" LabelPartType="PROPERTY_TYPE" />
+          </LabelParts>
+        </LabelDefinition>
+        <LabelDefinition ItemTypeId="TENT3">
+          <LabelParts>
+            <LabelPart Value="TP45" LabelPartType="PROPERTY_TYPE" />
+          </LabelParts>
+        </LabelDefinition>
+        <LabelDefinition ItemTypeId="TENT5">
+          <LabelParts>
+            <LabelPart Value="TP28" LabelPartType="PROPERTY_TYPE" />
+          </LabelParts>
+        </LabelDefinition>
+        <LabelDefinition ItemTypeId="TENT6">
+          <LabelParts>
+            <LabelPart Value="TP31" LabelPartType="PROPERTY_TYPE" />
+          </LabelParts>
+        </LabelDefinition>
+        <LabelDefinition ItemTypeId="TENT8">
+          <LabelParts>
+            <LabelPart Value="TP41" LabelPartType="PROPERTY_TYPE" />
+          </LabelParts>
+        </LabelDefinition>
+        <LabelDefinition ItemTypeId="TENT10">
+          <LabelParts>
+            <LabelPart Value="TP9" LabelPartType="PROPERTY_TYPE" />
+          </LabelParts>
+        </LabelDefinition>
+        <LabelDefinition ItemTypeId="TENT11">
+          <LabelParts>
+            <LabelPart Value="TP12" LabelPartType="PROPERTY_TYPE" />
+          </LabelParts>
+        </LabelDefinition>
+        <LabelDefinition ItemTypeId="TENT12">
+          <LabelParts>
+            <LabelPart Value="TP14" LabelPartType="PROPERTY_TYPE" />
+          </LabelParts>
+        </LabelDefinition>
+        <LabelDefinition ItemTypeId="TENL1">
+          <LabelParts>
+            <LabelPart Value="Asociado" LabelPartType="LITERAL" />
+          </LabelParts>
+        </LabelDefinition>
+      </LabelDefinitions>
+    </LabelingScheme>
+  </LabelingSchemes>
+  <SemanticTypeLibrary>
+    <lcx:LibraryCatalogue VersionMajor="1" VersionMinor="18" VersionRelease="27" VersionBuild="60" xmlns:lcx="http://www.i2group.com/Schemas/2001-12-07/LCXSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LocaleHex="000A" />
+  </SemanticTypeLibrary>
+</ns2:Schema>

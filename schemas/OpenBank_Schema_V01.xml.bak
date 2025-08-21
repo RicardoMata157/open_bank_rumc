@@ -75,7 +75,7 @@
           <PropertyType Description="" DisplayName="País de nacimiento" Id="TP8" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="9" SemanticTypeId="" MaximumLengthChars="250">
             <PossibleValues />
           </PropertyType>
-          <PropertyType Description="" DisplayName="Fecha de nacimiento" Id="TP52" LogicalType="DATE_AND_TIME" Mandatory="false" Position="10" SemanticTypeId="">
+          <PropertyType Description="" DisplayName="Fecha de nacimiento" Id="TP52" LogicalType="DATE" Mandatory="false" Position="10" SemanticTypeId="">
             <PossibleValues />
           </PropertyType>
           <PropertyType Description="" DisplayName="Riesgo de cliente" Id="TP53" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="11" SemanticTypeId="" MaximumLengthChars="250">
@@ -236,14 +236,14 @@
       </EntityType>
     </EntityTypes>
     <LinkTypes>
-      <LinkType DisplayName="Asociado" Id="TENL1" FromTypeIds="TENT1 TENT10 TENT11 TENT5 TENT6 TENT8" ToTypeIds="TENT10 TENT2 TENT5 TENT8 TENT1 TENT11 TENT3 TENT6">
+      <LinkType DisplayName="Asociado" Id="TENL1" FromTypeIds="TENT1 TENT10 TENT11 TENT5 TENT6 TENT8 TENT2 TENT3 TENT12" ToTypeIds="TENT10 TENT2 TENT5 TENT8 TENT1 TENT11 TENT3 TENT6 TENT12">
         <PropertyGroupTypes />
         <PropertyTypes />
       </LinkType>
     </LinkTypes>
   </ItemTypes>
   <Id>bd35538d-4817-421c-930f-a41ddf7b40af</Id>
-  <Version>25</Version>
+  <Version>27</Version>
   <SourceInfoMandatoryFields IsDateMandatory="false" IsDescriptionMandatory="false" IsReferenceMandatory="false" IsTypeMandatory="false" />
   <LinkStrengthInfo DefaultLinkStrengthId="f232caa8-cf55-4d9a-8c21-19a55b0447da">
     <LinkStrengths>

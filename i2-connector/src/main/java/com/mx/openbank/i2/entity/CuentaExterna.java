@@ -33,7 +33,7 @@ public class CuentaExterna implements Serializable {
 	@Column(name = "EXTERNAL_BIC")
 	private String banco;
 	
-	@Transient
+	@Column(name = "ordering_customer_id")
 	private String cuentaClabe;
 
 	public String getAccount_id() {

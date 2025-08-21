@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ChartingSchemeList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.i2group.com/Schemas/2012-05-29/ModelData/v2">
   <ChartingSchemes xmlns="">
     <ChartingScheme Name="Esquema de gráficos 1">

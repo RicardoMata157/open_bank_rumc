@@ -1,9 +1,14 @@
 package com.mx.openbank.i2.util;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -33,6 +38,26 @@ public class UtilConnector {
 	    return listaValores;
 	}
 
+	
+	public List<String> extreSourceIdsJson(String cadena){
+		ObjectMapper objectMapper = new ObjectMapper();
+		 String value = "";
+		 List<String> sourceIdsList = new ArrayList<String>();
+		 try {
+			 JsonNode rootNode = objectMapper.readTree(cadena);
+		        // Navegar por las propiedades
+		        JsonNode conditionsNode = rootNode.path("payload").path("seeds").path("entities");
+		        for (JsonNode condition : conditionsNode) {
+		        	 value = condition.path("sourceIds").path(0).path("key").path(2).asText();
+		        	 sourceIdsList.add(value);
+		        }
+		        
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		 
+		 return sourceIdsList;
+	}
 
 //	public String extraeCadenaBusquedaJson(String cadena) {
 //		ObjectMapper objectMapper = new ObjectMapper();
@@ -71,4 +96,86 @@ public class UtilConnector {
 		return response;
 	}
 
+	
+	
+	public List<String> extreSeedIdJson(String cadena) {
+		ObjectMapper objectMapper = new ObjectMapper();
+		 String value = "";
+		 List<String> listSeed = new ArrayList<String>();
+		 try {
+			 JsonNode rootNode = objectMapper.readTree(cadena);
+		        // Navegar por las propiedades
+		        JsonNode conditionsNode = rootNode.path("payload").path("seeds").path("entities");
+		        for (JsonNode condition : conditionsNode) {
+		        	 value = condition.path("seedId").asText();
+		        	 listSeed.add(value);
+		        }
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return listSeed;
+	}
+	
+	
+//	public String extraeCadenaBusquedaJson(String cadena) {
+//		ObjectMapper objectMapper = new ObjectMapper();
+//		 String value = "";
+//		try {
+//			JsonNode rootNode = objectMapper.readTree(cadena);
+//	        // Navegar por las propiedades
+//	        JsonNode conditionsNode = rootNode.path("payload").path("conditions");
+//	        
+//	        for (JsonNode condition : conditionsNode) {
+//	            String id = condition.path("id").asText();
+//	            String logicalType = condition.path("logicalType").asText();
+//	             value = condition.path("value").asText();
+//
+//	        }
+//			
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		} 
+//		return value;
+//	}
+	
+	
+	public List<String> extraeTypeIdsJson(String cadena) {
+	    ObjectMapper objectMapper = new ObjectMapper();
+	    Set<String> typeIds = new LinkedHashSet<>(); // mantiene orden de inserción y evita duplicados
+	    try {
+	        JsonNode root = objectMapper.readTree(cadena);
+	        JsonNode seeds = root.path("payload").path("seeds");
+
+	        // 1) De las entidades: payload.seeds.entities[].typeId
+	        JsonNode entities = seeds.path("entities");
+	        if (entities.isArray()) {
+	            for (JsonNode ent : entities) {
+	                String tid = ent.path("typeId").asText(null);
+	                if (tid != null && !tid.isEmpty()) {
+	                    typeIds.add(tid);
+	                }
+	            }
+	        }
+       
+	    } catch (Exception e) {
+	        // Loguea si lo necesitas
+	        // e.printStackTrace();
+	    }
+	    return new ArrayList<>(typeIds);
+	}
+	
+	
+	 public  String toIsoDateTime(String input) {
+	        try {
+	            DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+	            DateTimeFormatter outputFormatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME; 
+	            LocalDateTime dateTime = LocalDateTime.parse(input, inputFormatter);
+	            return dateTime.format(outputFormatter);
+	        } catch (DateTimeParseException e) {
+	            System.err.println("Formato inválido: " + input);
+	            return null;
+	        }
+	    }
+	
+	
 }

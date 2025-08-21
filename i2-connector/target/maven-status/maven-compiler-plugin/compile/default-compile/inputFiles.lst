@@ -1,24 +1,38 @@
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\repository\RepositoryCuenta.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\entity\CuentaExterna.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\entity\Onboarding.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\repository\RespositoryPersona.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\config\ConfigDataBases.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\controller\Controller.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\entity\Cuenta.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\entity\Tarjeta.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\repository\RepositoryDomicilio.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\entity\Comercio.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\entity\Operacion.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\entity\Persona.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\util\UtilConnector.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\service\ServicePersona.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\serviceImpl\ServicePersonaImpl.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\repository\RepositoryOperacion.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\config\Main.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\repository\RepositoryTarjeta.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\entity\Domicilio.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\repository\RepositoryTelefono.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\entity\Telefono.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\repository\RepositoryOnBoarding.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\repository\RepositoryCuentaExterna.java
-C:\Users\Ricardo Mata\Documents\OPENBANCK\i2-connector\src\main\java\com\mx\openbank\i2\repository\RepositoryComercio.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/IngCifField.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/serviceImpl/ServiceOperacionImpl.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/controller/Controller.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/ProAccountDynField.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/Persona.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/service/ServiceTelefono.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/Telefono.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/util/ContructorEntidades.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/CuentaExterna.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/serviceImpl/ServicePersonaImpl.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/repository/RepositoryOnBoarding.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/service/ServiceDomicilio.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/repository/RespositoryPersona.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/Tarjeta.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/repository/RepositoryCuenta.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/PorTransaction.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/serviceImpl/ServiceDomicilioImpl.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/Cuenta.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/serviceImpl/ServiceTelefonoImpl.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/service/ServiceOnBoarding.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/repository/RepositoryTarjeta.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/Domicilio.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/config/Main.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/repository/RepositoryCuentaExterna.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/repository/RepositoryComercio.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/util/UtilConnector.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/repository/RepositoryDomicilio.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/service/ServiceCuentaExterna.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/service/ServicePersona.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/service/ServiceOperacion.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/Comercio.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/serviceImpl/ServiceOnboardingImpl.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/config/ConfigDataBases.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/Operacion.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/repository/RepositoryTelefono.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/serviceImpl/ServiceCuentaExternaImpl.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/entity/Onboarding.java
+/home/i2-connector/i2-connector/src/main/java/com/mx/openbank/i2/repository/RepositoryOperacion.java

@@ -10,6 +10,8 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.mx.openbank.i2.entity.Cuenta;
+import com.mx.openbank.i2.entity.Operacion;
 import com.mx.openbank.i2.entity.Persona;
 import com.mx.openbank.i2.repository.RespositoryPersona;
 import com.mx.openbank.i2.service.ServicePersona;
@@ -21,9 +23,9 @@ public class ServicePersonaImpl implements ServicePersona {
 
 	@Autowired
 	private RespositoryPersona repositoryPersona;
-	
+
 	private UtilConnector util;
-	
+
 	private ContructorEntidades contructorEntidades;
 
 	private static final Logger Logger = LogManager.getLogger(ServicePersonaImpl.class);
@@ -36,8 +38,9 @@ public class ServicePersonaImpl implements ServicePersona {
 		contructorEntidades = new ContructorEntidades();
 		String nombre = null;
 		String apellido = null;
-		String id_persona = null;
-		
+		String idPersona = null;
+		String paisNacimiento = null;
+
 		for (HashMap<String, String> map : valor) {
 			String id = map.get("id");
 			String val = map.get("value");
@@ -45,30 +48,36 @@ public class ServicePersonaImpl implements ServicePersona {
 				nombre = val;
 			} else if ("apellidos".equalsIgnoreCase(id)) {
 				apellido = val;
-			}else if ("idCliente".equalsIgnoreCase(id)) {
-				id_persona = val;
+			} else if ("idCliente".equalsIgnoreCase(id)) {
+				idPersona = val;
+			} else if ("paisnacimiento".equalsIgnoreCase(id)) {
+				paisNacimiento = val;
 			}
 		}
 
 		if (nombre != null && apellido != null) {
-			List<Persona> personas = repositoryPersona.getRegresaPerona(nombre, apellido);
+//			List<Persona> personas = repositoryPersona.getRegresaPerona(nombre, apellido);
+			 List<Persona> personas = repositoryPersona.getPersonaFlexible(nombre, apellido, idPersona, paisNacimiento);
+		        
+			Logger.info("Resultado búsqueda: " + personas);
+			for (Persona persona : personas) {
+				listaEntidades.add(contructorEntidades.mapeoEntidadPersona(persona));
+//				persona.getOperaciones().stream().forEach(operacion -> {
+//					Cuenta cuenta  = operacion.getCuenta();
+//					listaEntidades.add(contructorEntidades.mapeoEntidadCuenta(cuenta));
+//				});
+			}
+		}
+
+		if (nombre != null && apellido == null && idPersona != null) {
+			List<Persona> personas = repositoryPersona.getRegresaPeronaId(idPersona);
 			Logger.info("Resultado búsqueda: " + personas);
 			for (Persona persona : personas) {
 				listaEntidades.add(contructorEntidades.mapeoEntidadPersona(persona));
 			}
+
 		}
-		
-		
-		if (nombre != null && apellido == null  && id_persona != null) {
-			List<Persona>  personas = repositoryPersona.getRegresaPeronaId(id_persona);
-			Logger.info("Resultado búsqueda: " + personas);
-			for (Persona persona : personas) {
-				listaEntidades.add(contructorEntidades.mapeoEntidadPersona(persona));
-			}
-			
-		}
-		
-		
+
 		Map<String, Object> response = util.generateResponse(listaEntidades);
 
 		return response;

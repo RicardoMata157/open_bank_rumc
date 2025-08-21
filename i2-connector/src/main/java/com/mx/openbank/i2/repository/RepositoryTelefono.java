@@ -1,11 +1,30 @@
 package com.mx.openbank.i2.repository;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.mx.openbank.i2.entity.Telefono;
 
 @Repository
 public interface RepositoryTelefono extends  JpaRepository<Telefono, String>{
+	
+	
+	@Query(nativeQuery = true, value = "select tr.cif_record_id, tr.telno_fix    from fcm.tah2cif_record tr"
+			                         + " where telno_fix = :numerotelefonico ;")
+	List<Telefono> consultaTelefono(@Param("numerotelefonico") String numerotelefonico);
+	
+	
+	
+	@Query(nativeQuery = true, value = """
+		    select tcr.cif_record_id, tcr.telno_fix
+		    from fcm.tah2cif_record tcr
+		    where tcr.cust_id = :idUsuario
+		    """)
+		List<Telefono> consultaTelefonoPersona(@Param("idUsuario") String idUsuario);
+
 
 }

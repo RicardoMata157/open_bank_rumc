@@ -2,6 +2,7 @@ package com.mx.openbank.i2.entity;
 
 import java.io.Serializable;
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -20,7 +21,7 @@ public class Telefono implements Serializable {
 	@Id
 	@Column(name = "cif_record_id")
 	private String id;
-	
+		
 	
 	@Column(name = "telno_fix")
 	private String numeroTelefonico;
@@ -44,8 +45,5 @@ public class Telefono implements Serializable {
 	public void setNumeroTelefonico(String numeroTelefonico) {
 		this.numeroTelefonico = numeroTelefonico;
 	}
-	
-	
-	
 
 }

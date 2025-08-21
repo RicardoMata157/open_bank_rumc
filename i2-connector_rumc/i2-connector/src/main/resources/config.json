@@ -1,0 +1,320 @@
+{
+  "defaultValues": {
+    "timeZoneId": "Europe/London",
+    "resultIdsPersistent": true
+  },
+  "services": [
+    {
+      "id": "busqueda-persona",
+      "name": "Búsqueda persona",
+      "description": "Servicio para buscar una persona",
+      "clientConfigType": "FORM",
+      "clientConfigId": "searchFormPersona",
+      "acquireUrl": "/busqueda-persona"
+    },
+    {
+      "id": "busqueda-Domicilio",
+      "name": "Búsqueda Domicilio",
+      "description": "Servicio para buscar un Domicilio",
+      "clientConfigType": "FORM",
+      "clientConfigId": "searchFormDomicilio",
+      "acquireUrl": "/busqueda-domicilio"
+    },
+    {
+      "id": "busqueda-Comercio",
+      "name": "Búsqueda Comercio",
+      "description": "Servicio para buscar un Comercio",
+      "clientConfigType": "FORM",
+      "clientConfigId": "searchFormComercio",
+      "acquireUrl": "/busqueda-comercio"
+    },
+    {
+      "id": "busqueda-Telefono",
+      "name": "Búsqueda Telefono",
+      "description": "Servicio para buscar un Telefono",
+      "clientConfigType": "FORM",
+      "clientConfigId": "searchFormTelefono",
+      "acquireUrl": "/busqueda-telefono"
+    },
+    {
+      "id": "busqueda-Tarjeta",
+      "name": "Búsqueda Tarjeta",
+      "description": "Servicio para buscar un Tarjeta",
+      "clientConfigType": "FORM",
+      "clientConfigId": "searchFormTarjeta",
+      "acquireUrl": "/busqueda-tarjeta"
+    },
+    {
+      "id": "busqueda-Cuenta",
+      "name": "Búsqueda Cuenta",
+      "description": "Servicio para buscar un Cuenta",
+      "clientConfigType": "FORM",
+      "clientConfigId": "searchFormCuenta",
+      "acquireUrl": "/busqueda-cuenta"
+    },
+    {
+      "id": "busqueda-Onboarding",
+      "name": "Búsqueda Onboarding",
+      "description": "Servicio para buscar un Onboarding",
+      "clientConfigType": "FORM",
+      "clientConfigId": "searchFormOnboarding",
+      "acquireUrl": "/busqueda-onboarding"
+    },
+    {
+      "id": "busqueda-Cuentaexterna",
+      "name": "Búsqueda Cuenta Externa",
+      "description": "Servicio para buscar un Cuenta Externa",
+      "clientConfigType": "FORM",
+      "clientConfigId": "searchFormCuentaexterna",
+      "acquireUrl": "/busqueda-cuentaexterna"
+    },
+    {
+      "id": "busqueda-Operacion",
+      "name": "Búsqueda Cuenta Operacion",
+      "description": "Servicio para buscar un Cuenta Operacion",
+      "clientConfigType": "FORM",
+      "clientConfigId": "searchFormCuentaoperacion",
+      "acquireUrl": "/busqueda-operacion"
+    },
+    {
+      "id": "expansion",
+      "name": "Expansión",
+      "description": "Servicio para expandir una entidad",
+      "clientConfigType": "NONE",
+      "acquireUrl": "/expansion",
+      "seedConstraints": {
+        "min": 1,
+        "max": 500,
+        "seedTypes": {
+          "allowedTypes": "ENTITY",
+          "itemTypes": [
+            { "id": "TENT3" },
+            { "id": "TENT10" },
+            { "id": "TENT6" },
+            { "id": "TENT2" },
+            { "id": "TENT5" },
+            { "id": "TENT8" },
+            { "id": "TENT1" },
+            { "id": "TENT11" },
+            { "id": "TENT12" }
+          ]
+        }
+      }
+    }
+  ],
+  "clientConfigs": [
+    {
+      "id": "searchFormPersona",
+      "config": {
+        "sections": [
+          {
+            "conditions": [
+              {
+                "id": "nombres",
+                "label": "Nombres",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              },
+              {
+                "id": "apellidos",
+                "label": "Apellidos",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              },
+              {
+                "id": "idcliente",
+                "label": "Id_cliente",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              },
+              {
+                "id": "paisnacimiento",
+                "label": "Pais_de_nacimiento",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "searchFormDomicilio",
+      "config": {
+        "sections": [
+          {
+            "conditions": [
+              {
+                "id": "ciudad",
+                "label": "Ciudad",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              },
+              {
+                "id": "cp",
+                "label": "CP",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "searchFormComercio",
+      "config": {
+        "sections": [
+          {
+            "conditions": [
+              {
+                "id": "nombrecomercio",
+                "label": "Nombre de Comercio / Entrada",
+                "mandatory": true,
+                "logicalType": "SINGLE_LINE_STRING"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "searchFormTelefono",
+      "config": {
+        "sections": [
+          {
+            "conditions": [
+              {
+                "id": "numerotelefonico",
+                "label": "Numero Telefonico",
+                "mandatory": true,
+                "logicalType": "SINGLE_LINE_STRING"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "searchFormTarjeta",
+      "config": {
+        "sections": [
+          {
+            "conditions": [
+              {
+                "id": "numerotarjeta",
+                "label": "Numero de Tarjeta",
+                "mandatory": true,
+                "logicalType": "SINGLE_LINE_STRING"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "searchFormCuenta",
+      "config": {
+        "sections": [
+          {
+            "conditions": [
+              {
+                "id": "numerodecuenta",
+                "label": "Número de cuenta",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              },
+              {
+                "id": "clabeinterbancaria",
+                "label": "Clabe interbancaria",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "searchFormOnboarding",
+      "config": {
+        "sections": [
+          {
+            "conditions": [
+              {
+                "id": "Latitud",
+                "label": "Latitud",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "searchFormCuentaexterna",
+      "config": {
+        "sections": [
+          {
+            "conditions": [
+              {
+                "id": "numerocuentaentrada",
+                "label": "Número de cuenta / Entrada",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              },
+              {
+                "id": "numerocuentasalida",
+                "label": "Número de cuenta / Salida",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              },
+              {
+                "id": "nombrecompleto",
+                "label": "Nombre Completo",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "searchFormCuentaoperacion",
+      "config": {
+        "sections": [
+          {
+            "conditions": [
+              {
+                "id": "IDtransaccion",
+                "label": "ID de la transacción",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              },
+              {
+                "id": "Codigosoperacionentrada",
+                "label": "Códigos de operación/Entrada",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              },
+              {
+                "id": "Codigosoperacionsalida",
+                "label": "ID de la transacción/Salida",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              },
+              {
+                "id": "LatitudLongitud",
+                "label": "Latitud / Longitud",
+                "mandatory": false,
+                "logicalType": "SINGLE_LINE_STRING"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

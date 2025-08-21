@@ -1,0 +1,144 @@
+{
+	"defaultValues": {
+		"timeZoneId": "Europe/London",
+		"resultIdsPersistent": true
+	},
+
+	"services": [
+		{
+			"id": "busqueda-cuenta",
+			"name": "Búsqueda Cuenta",
+			"description": "Servicio para buscar una cuenta",
+			"clientConfigType": "FORM",
+			"clientConfigId": "searchForm",
+			"acquireUrl": "/busqueda-cuenta"
+		},
+		
+		{
+		    "id": "busqueda-persona",
+			"name": "Búsqueda Persona",
+			"description": "Servicio para buscar una persona",
+			"clientConfigType": "FORM",
+			"clientConfigId": "searchFormPersona",
+			"acquireUrl": "/busqueda-persona"
+		
+		}
+		,
+		{
+			"id": "expansion",
+			"name": "Expansión",
+			"description": "Servicio para expandir una entidad",
+			"clientConfigType": "NONE",
+			"acquireUrl": "/expansion",
+			"seedConstraints": {
+				"min": 1,
+				"max": 100,
+				"seedTypes": {
+					"allowedTypes": "ENTITY",
+					"itemTypes": [
+						{
+							"id": "TENT1"
+						},
+						{
+						     "id": "TENT2"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "expansionParamatro",
+			"name": "Expansión con parametros",
+			"description": "Servicio para expandir una entidad enviando un parametro",
+			"clientConfigType": "FORM",
+			"clientConfigId": "expandForm",
+			"acquireUrl": "/expand-with-conditions",
+			"seedConstraints": {
+				"min": 1,
+				"max": 1,
+				"seedTypes": {
+					"allowedTypes": "ENTITY",
+					"itemTypes": [
+						{
+							"id": "TENT1"
+						},
+						{
+							"id": "TENT1"
+						}
+					]
+				}
+			}
+		}
+	]
+	
+	,
+	
+	
+	
+	"clientConfigs": [
+		{
+			"id": "searchForm",
+			"config": {
+				"sections": [
+					{
+						"conditions": [
+							{
+								"id": "searchTerm",
+								"label": "Parámetro de Búsqueda",
+								"mandatory": true,
+								"logicalType": "SINGLE_LINE_STRING"
+							}
+						]
+					}
+				]
+			}
+		},
+   {
+   	"id": "searchFormPersona",
+			"config": {
+				"sections": [
+					{
+						"conditions": [
+							{
+								"id": "nombres",
+								"label": "Nombres",
+								"mandatory": true,
+								"logicalType": "SINGLE_LINE_STRING"
+							},
+							{
+								"id": "apellidos",
+								"label": "Apellidos",
+								"mandatory": false,
+								"logicalType": "SINGLE_LINE_STRING"
+							},
+							{
+								"id": "idCliente",
+								"label": "id_cliente",
+								"mandatory": false,
+								"logicalType": "SINGLE_LINE_STRING"
+							}
+						]
+					}
+				]
+			}
+   },
+
+		{
+			"id": "expandForm",
+			"config": {
+				"sections": [
+					{
+						"conditions": [
+							{
+								"id": "searchTermExpand",
+								"label": "Parámetro de Búsqueda",
+								"mandatory": true,
+								"logicalType": "SINGLE_LINE_STRING"
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
